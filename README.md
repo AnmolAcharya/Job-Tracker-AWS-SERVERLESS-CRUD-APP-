@@ -2,7 +2,7 @@ AWS Serverless Job Tracker App
 Track your job applications, referral status, and progress — securely and efficiently — with a fully serverless cloud-native architecture.
 
 Architecture Diagram and Flow: 
-[AWS Serverless Architecture Diagram.pdf](https://github.com/user-attachments/files/20580610/AWS.Serverless.Architecture.Diagram.pdf)
+![Arch ](https://github.com/user-attachments/assets/ca574540-eb28-4cb9-a0db-88c3b7bd4cff)
 
 ![Home](https://github.com/user-attachments/assets/cfbc1112-f6de-41eb-8f6d-79b4feb512ef)
 
