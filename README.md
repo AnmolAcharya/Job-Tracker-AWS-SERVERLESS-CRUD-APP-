@@ -1,7 +1,10 @@
 AWS Serverless Job Tracker App
 Track your job applications, referral status, and progress — securely and efficiently — with a fully serverless cloud-native architecture.
 
-🎯 Objective
+![Home](https://github.com/user-attachments/assets/cfbc1112-f6de-41eb-8f6d-79b4feb512ef)
+
+🎯 Objective:
+
 Managing job applications and their statuses can become overwhelming, especially when applying to numerous companies. This project addresses that challenge by providing a centralized portal to:
 
 Log applications
