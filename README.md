@@ -1,6 +1,9 @@
 AWS Serverless Job Tracker App
 Track your job applications, referral status, and progress — securely and efficiently — with a fully serverless cloud-native architecture.
 
+Architecture Diagram and Flow: 
+[AWS Serverless Architecture Diagram.pdf](https://github.com/user-attachments/files/20580610/AWS.Serverless.Architecture.Diagram.pdf)
+
 ![Home](https://github.com/user-attachments/assets/cfbc1112-f6de-41eb-8f6d-79b4feb512ef)
 
 🎯 Objective:
@@ -77,9 +80,14 @@ It offers:
 🗂️ Real-time updates with DynamoDB
 💨 Low-latency performance via CloudFront
 
+![Jobsection](https://github.com/user-attachments/assets/4c97cfab-4e9e-4836-b502-d9b74ff62928)
+
+
 🔮 Upcoming Features / Improvements
 ✅ Multi-user database isolation using Cognito-sub-based partitioning in DynamoDB
 ✅ Pagination and filtering to better manage large job lists
+
+
 
 
 🧑‍💻 Tech Stack
