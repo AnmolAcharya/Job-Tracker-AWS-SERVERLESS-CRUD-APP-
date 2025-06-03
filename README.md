@@ -3,6 +3,8 @@ Track your job applications, referral status, and progress — securely and effi
 
 ![Home](https://github.com/user-attachments/assets/cfbc1112-f6de-41eb-8f6d-79b4feb512ef)
 
+Demo Link (YouTube): https://www.youtube.com/watch?v=3d11uOkJie4
+
 Architecture Diagram and Flow: 
 ![Arch ](https://github.com/user-attachments/assets/ca574540-eb28-4cb9-a0db-88c3b7bd4cff)
 
