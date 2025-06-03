@@ -1,0 +1,255 @@
+/* App.css - Modern Job Tracker Design */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background: #f5e6d3; /* Wheatish background color */
+  color: #2d2d2d;
+  min-height: 100vh;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  padding: 1.5rem;
+  background: #2d2d2d;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  position: fixed; /* Fix the header */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  display: flex;
+  margin-top: 5rem; /* Add margin to account for fixed header */
+  min-height: calc(100vh - 5rem);
+}
+
+.sidebar-form {
+  flex: 0 0 350px;
+  background: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: calc(100vh - 5rem);
+  border-right: 1px solid #e0e0e0;
+  position: fixed;
+  top: 5rem; /* Position below fixed header */
+  left: 0;
+}
+
+.job-section {
+  flex: 1;
+  margin-left: 350px; /* Match sidebar width */
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 1.5rem;
+  overflow-y: auto;
+  align-content: start;
+}
+
+.styled-input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #2d2d2d;
+  font-size: 1rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.styled-input::placeholder {
+  color: #999;
+}
+
+.styled-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.job-card {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.company-logo-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.job-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.job-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.applied {
+  background: linear-gradient(135deg, #ffd700 0%, #ffc400 100%);
+  color: #2d2d2d;
+}
+
+.status-badge.interview {
+  background: linear-gradient(135deg, #98FB98 0%, #90EE90 100%);
+  color: #2d2d2d;
+}
+
+.status-badge.offer {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+}
+
+.status-badge.rejected {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+  color: white;
+}
+
+.status-badge.waitlist {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+}
+
+/* Status badges with colors */
+.status {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: fit-content;
+  margin: 0.5rem auto;
+}
+
+.status-applied {
+  background: #ffd700;
+  color: #2d2d2d;
+}
+
+.status-interview {
+  background: #98FB98;
+  color: #2d2d2d;
+}
+
+.status-offer {
+  background: #4CAF50;
+  color: white;
+}
+
+.status-rejected {
+  background: #ff6b6b;
+  color: white;
+}
+
+.status-waitlist {
+  background: #4a90e2;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+  .job-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .job-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  
+  .sidebar-form {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .job-section {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
+

@@ -1,0 +1,8 @@
+# Ignore layer dependencies
+nodejs/node_modules/
+nodejs/package-lock.json
+
+# Optional: Editor & OS junk
+.DS_Store
+.vscode/
+*.log
