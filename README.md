@@ -8,7 +8,7 @@ Demo Link (YouTube): https://www.youtube.com/watch?v=72-YyrL5o9s
 Architecture Diagram and Flow: 
 ![Stuffs](https://github.com/user-attachments/assets/02127faf-6f86-40d4-a523-80241f627c7c)
 
-What proble does it solve:
+What problem does it solve:
 
 This project simplifies job application tracking by offering a centralized, serverless AWS-powered portal to log, update, and manage application statuses efficiently.
 
