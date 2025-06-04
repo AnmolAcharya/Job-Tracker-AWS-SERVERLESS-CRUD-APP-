@@ -38,18 +38,16 @@ All operations are secured and user-scoped using Cognito’s JWT tokens and veri
 
 ![Jobsection](https://github.com/user-attachments/assets/4c97cfab-4e9e-4836-b502-d9b74ff62928)
 
+Upcoming Features / Improvements
+* Multi-user database isolation using Cognito-sub-based partitioning in DynamoDB
+* Pagination and filtering to better manage large job lists
 
-🔮 Upcoming Features / Improvements
-✅ Multi-user database isolation using Cognito-sub-based partitioning in DynamoDB
-✅ Pagination and filtering to better manage large job lists
-
-
-🧑‍💻 Tech Stack
-Frontend: React.js, TailwindCSS (optional), Vite
+Tech Stack Used
+Frontend: React.js (Vite)
 Backend: Node.js on AWS Lambda
 Database: DynamoDB (NoSQL)
 Auth: Amazon Cognito (JWT Token-based)
 Hosting: CloudFront + API Gateway + Lambda
 
-🙌 Acknowledgments
+#Acknowledgments
 This project was inspired by a real-world problem faced during internship application cycles. The architecture and flow were refined from AWS best practices and enhanced beyond common tutorials for production-readiness.
