@@ -6,7 +6,7 @@ AWS Job Tracker helps you track your Jobs/Internships application and their stat
 Demo Link (YouTube): https://www.youtube.com/watch?v=3d11uOkJie4
 
 Architecture Diagram and Flow: 
-![Arch ](https://github.com/user-attachments/assets/ca574540-eb28-4cb9-a0db-88c3b7bd4cff)
+![ARCH AWS](https://github.com/user-attachments/assets/cabc8930-5191-43fd-9eea-36938ec26f96)
 
 What proble does it solve:
 
