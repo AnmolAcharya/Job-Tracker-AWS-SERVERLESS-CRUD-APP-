@@ -1,4 +1,4 @@
-                                                                                       AWS Serverless Job Tracker App
+                                                                    AWS Serverless Job Tracker App
 AWS Job Tracker helps you track your Jobs/Internships application and their statuses with ease. Built on top of AWS's popular services( Lambda, API Gateway, S3, AWS Cognito, DynamoDB, CloudFront) and React. 
 
 ![Home](https://github.com/user-attachments/assets/cfbc1112-f6de-41eb-8f6d-79b4feb512ef)
