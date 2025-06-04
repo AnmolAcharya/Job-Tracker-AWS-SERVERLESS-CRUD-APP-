@@ -1,5 +1,5 @@
-AWS Serverless Job Tracker App
-Track your job applications, referral status, and progress — securely and efficiently — with a fully serverless cloud-native architecture.
+                                                                                       AWS Serverless Job Tracker App
+AWS Job Tracker helps you track your Jobs/Internships application and their statuses with ease. Built on top of AWS's popular services( Lambda, API Gateway, S3, AWS Cognito, DynamoDB, CloudFront) and React. 
 
 ![Home](https://github.com/user-attachments/assets/cfbc1112-f6de-41eb-8f6d-79b4feb512ef)
 
@@ -8,79 +8,33 @@ Demo Link (YouTube): https://www.youtube.com/watch?v=3d11uOkJie4
 Architecture Diagram and Flow: 
 ![Arch ](https://github.com/user-attachments/assets/ca574540-eb28-4cb9-a0db-88c3b7bd4cff)
 
-🎯 Objective:
+What proble does it solve:
 
-Managing job applications and their statuses can become overwhelming, especially when applying to numerous companies. This project addresses that challenge by providing a centralized portal to:
+This project simplifies job application tracking by offering a centralized, serverless AWS-powered portal to log, update, and manage application statuses efficiently.
 
-Log applications
-Update status and referral information
-Delete or edit entries as needed
+Service Overview:
 
-This solution leverages modern AWS serverless services to provide a secure, scalable, and cost-efficient experience.
+Cognito – Handles user sign-up/login with JWT-based auth
+API Gateway – Connects frontend to backend APIs
+Lambda – Runs CRUD logic
+DynamoDB – Stores job data in a NoSQL table
+CloudFront – Delivers frontend globally with low latency
+S3 – Hosts frontend static files 
 
-🏗️ Architecture Overview
-
-This app is built entirely on AWS’s serverless stack and consists of the following key components:
-
-⚙️ Core Flow:
-Frontend (React.js)
-A responsive UI allowing users to interact with job data (Create, Read, Update, Delete)
-
-Deployed using AWS CloudFront for global delivery and fast load times
-Authentication (Amazon Cognito)
-Handles secure sign-up and login
-Provides JWT tokens to verify user identity and authorize API requests
-
-API Layer (Amazon API Gateway)
-Exposes secure REST endpoints for frontend interaction
-Validates JWT tokens and routes requests to Lambda functions
-
-Business Logic (AWS Lambda)
-Stateless backend logic for all CRUD operations
-Written in Node.js with the AWS SDK and connected to DynamoDB
-
-Database (Amazon DynamoDB)
-NoSQL database to store job entries (jobId, name, appliedDate, status, referral, etc.)
-Designed for fast lookups and scalability
-
-🛠️ AWS Services Used
-Service	Purpose
-Cognito	User sign-up/login, token-based auth (JWT)
-API Gateway	Serves as the interface for the frontend to access backend functions
-Lambda	Executes business logic for Create, Read, Update, Delete operations
-DynamoDB	Stores job application data in a scalable NoSQL table
-CloudFront	Distributes the static frontend globally with low latency
-S3 (optional)	For frontend hosting if not using Vercel or other services
-
-🚀 How to Run the App
-✅ Deployed Version:
+Currently deployed in CLoudfront:
 The app is hosted using CloudFront. Owner can access it at:
-
 🔗 https://d3stgb1bbo1aaq.cloudfront.net
 
-👤 Access:
+Access:
 Once the app loads, sign up or log in using your email (handled by Cognito).
-
 After login, the portal displays your job applications.
-
 Use the interface to:
-
 Add a new job entry
 Edit/update an application
 Delete entries if needed
 
 All operations are secured and user-scoped using Cognito’s JWT tokens and verified by API Gateway.
 
-🔍 Problem This Solves
-Tracking job applications across different portals is chaotic.
-Many students and professionals use spreadsheets or notes to manage this. This app replaces the need for manual entry systems with a robust, cloud-native job tracking portal.
-
-It offers:
-
-🔒 Secure access via login
-✍️ Easy form-based job logging
-🗂️ Real-time updates with DynamoDB
-💨 Low-latency performance via CloudFront
 
 ![Jobsection](https://github.com/user-attachments/assets/4c97cfab-4e9e-4836-b502-d9b74ff62928)
 
@@ -88,8 +42,6 @@ It offers:
 🔮 Upcoming Features / Improvements
 ✅ Multi-user database isolation using Cognito-sub-based partitioning in DynamoDB
 ✅ Pagination and filtering to better manage large job lists
-
-
 
 
 🧑‍💻 Tech Stack
